@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $education = $_POST['education'] ?? "";
     $experience = $_POST['experience'] ?? "";
 
-    // File upload
+    
     if (isset($_FILES['profile']) && $_FILES['profile']['error'] == 0) {
         $targetDir = "uploads/";
         $fileName = basename($_FILES["profile"]["name"]);
